@@ -1,0 +1,18 @@
+@import "../../../vars";
+
+.Header {
+  @include flex(row, space-between, center);
+
+  background: transparent;
+  height: 15rem;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+}
+
+.Menu {
+  @include flex(column, flex-start, flex-end);
+
+  width: 60%;
+  margin-right: $spaceM;
+}

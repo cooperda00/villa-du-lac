@@ -1,0 +1,116 @@
+@import "../../../../vars";
+
+.Navigation {
+  width: 120%;
+}
+
+.Links {
+  @include flex(row, flex-end, center);
+  width: 100%;
+}
+
+.MenuItemLink {
+  @include font("S");
+
+  color: white;
+  margin-left: $spaceM;
+}
+
+// .HamburgerMenu {
+//   @include font("XL");
+
+//   background: transparent;
+//   border: none;
+//   color: white;
+//   cursor: pointer;
+//   margin-right: 1rem;
+//   margin-top: 2rem;
+
+//   @include min-width(1000px) {
+//     display: none;
+//   }
+// }
+
+// .MiniMenu {
+//   @include flex(row, center, center);
+
+//   background: rgba($gray5, 0.9);
+//   flex-wrap: wrap;
+//   padding: $spaceS;
+//   position: absolute;
+//   right: 0;
+//   top: 14rem;
+//   width: 100%;
+
+//   a {
+//     @include font("SM");
+//     color: white;
+//     padding: 0 $spaceS;
+//   }
+
+//   @include min-width(321px) {
+//     background: transparent;
+//   }
+
+//   @include min-width(1000px) {
+//     display: none;
+//   }
+// }
+
+// .ContactBtn {
+//   border: 0.15rem solid white;
+//   border-radius: 5px;
+//   padding: $spaceXS $spaceS;
+//   transition: 0.8s;
+
+//   &:hover {
+//     background: rgba($primary, 0.5);
+//   }
+// }
+
+// .MenuItemWrapper {
+//   .ServicesSubMenu,
+//   .ComplianceSubMenu {
+//     @include flex(column, flex-start, flex-start);
+
+//     background: rgba($gray5, 0.6);
+//     visibility: hidden;
+//     opacity: 0;
+//     position: absolute;
+
+//     top: $spaceM;
+//     padding: $spaceM;
+//     transition: 0.5s;
+
+//     a {
+//       @include font("XS");
+//       color: white;
+//       margin-bottom: $spaceS;
+//       letter-spacing: 0.1rem;
+
+//       @include min-width(1500px) {
+//         @include font("S");
+//       }
+//     }
+
+//     a:hover {
+//       color: $primaryLL;
+//     }
+//   }
+
+//   .ServicesSubMenu {
+//     width: 38rem;
+//   }
+
+//   .ComplianceSubMenu {
+//     width: 20rem;
+//   }
+
+//   &:hover {
+//     .ServicesSubMenu,
+//     .ComplianceSubMenu {
+//       visibility: visible;
+//       opacity: 1;
+//     }
+//   }
+// }

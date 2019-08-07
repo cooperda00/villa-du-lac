@@ -1,0 +1,27 @@
+@import "../../../vars";
+
+.BannerText {
+  @include flex(column, center, flex-start);
+
+  padding: $spaceXL;
+  width: 100%;
+
+  h1,
+  h2 {
+    color: $gray5;
+    text-shadow: 0px 0px 12rem black;
+    letter-spacing: 0.4rem;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  h1 {
+    @include font("XXL");
+    margin-bottom: $spaceM;
+  }
+
+  h2 {
+    @include font("M");
+    text-transform: uppercase;
+  }
+}
