@@ -1,14 +1,28 @@
 @import "../../../../vars";
 
 .Logo {
-  padding-left: $spaceL;
+  padding-left: $spaceM;
+  padding-top: $spaceS;
+  width: 30%;
 
   h1 {
-    @include font("XXL");
+    @include font("XL");
     font-weight: 300;
 
     span {
-      @include font("M");
+      @include font("SSM");
+    }
+  }
+
+  @include min-width(1200px) {
+    padding-left: $spaceL;
+
+    h1 {
+      @include font("XXL");
+
+      span {
+        @include font("M");
+      }
     }
   }
 }

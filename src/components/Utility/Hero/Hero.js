@@ -1,6 +1,5 @@
 //Modules
 import React from "react"
-import Image from "gatsby-image"
 //Sass
 import styles from "./Hero.module.scss"
 
@@ -10,14 +9,7 @@ const Hero = ({ image, children }) => {
       <div className={styles.Left}>{children}</div>
 
       <div className={styles.Right}>
-        <div className={styles.ImageContainer}>
-          <Image
-            critical
-            fadeIn={false}
-            fluid={image}
-            className={styles.Hero}
-          />
-        </div>
+        <div className={styles.ImageContainer} />
       </div>
     </section>
   )

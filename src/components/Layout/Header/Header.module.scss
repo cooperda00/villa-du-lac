@@ -1,13 +1,18 @@
 @import "../../../vars";
 
 .Header {
-  @include flex(row, space-between, center);
+  //Hide header on Mobile
+  display: none;
 
-  background: transparent;
-  height: 15rem;
-  width: 100%;
-  position: absolute;
-  z-index: 100;
+  @include min-width(768px) {
+    @include flex(row, space-between, center);
+
+    background: transparent;
+    height: 15rem;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+  }
 }
 
 .Menu {

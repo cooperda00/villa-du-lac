@@ -17,10 +17,6 @@ export const links = [
   },
   {
     path: "/",
-    text: "Reviews",
-  },
-  {
-    path: "/",
     text: "Contact",
   },
 ]

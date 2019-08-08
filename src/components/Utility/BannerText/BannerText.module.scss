@@ -3,25 +3,50 @@
 .BannerText {
   @include flex(column, center, flex-start);
 
-  padding: $spaceXL;
   width: 100%;
+  padding: $spaceM;
+  margin-top: 10vh;
+
+  @include min-width(1400px) {
+    padding: $spaceXL;
+  }
 
   h1,
   h2 {
-    color: $gray5;
-    text-shadow: 0px 0px 12rem black;
+    color: white;
+    text-shadow: 0px 0px 2rem $gray6;
     letter-spacing: 0.4rem;
     font-weight: 400;
     text-align: left;
   }
 
   h1 {
-    @include font("XXL");
+    @include font("XL");
     margin-bottom: $spaceM;
   }
 
   h2 {
-    @include font("M");
+    @include font("SM");
     text-transform: uppercase;
+  }
+
+  @include min-width(768px) {
+    margin-top: 0;
+
+    h1,
+    h2 {
+      color: $gray5;
+      text-shadow: 0px 0px 12rem $gray6;
+    }
+  }
+
+  @include min-width(1400px) {
+    h1 {
+      @include font("XXL");
+    }
+
+    h2 {
+      @include font("M");
+    }
   }
 }
